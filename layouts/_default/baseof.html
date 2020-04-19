@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 <meta charset="utf-8">
 {{ hugo.Generator }}
+<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/GallonHu/pic@master/blog/复仇者联盟-钢铁侠.png">
 {{- if or .Description .Site.Params.description }}
 <meta name="description" content="{{ .Description | default .Site.Params.description }}">
 {{- end }}
